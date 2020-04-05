@@ -1,0 +1,4 @@
+{
+    "mongodbURI" : "mongodb+srv://shashank:shashank@cluster0-vpgxb.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}

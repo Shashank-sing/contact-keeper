@@ -2,8 +2,14 @@ const express = require('express');
 const Users = require('./routes/Users.js')
 const Contacts = require('./routes/contacts.js')
 const Auth = require('./routes/auth.js')
+const connectDB = require('./config/db')
+
+
+connectDB();
 
 const app = express();
+
+app.use(express.json({extended: false}));
 
 app.use('/api/auth',Auth)
 app.use('/api/users',Users)
